@@ -113,14 +113,14 @@ export default function Login({ onLogin }) {
             {error && <div className="error-msg" style={{ color: 'red' }}>{error}</div>}
 
             {/* Options */}
-            <div className="form-options">
+            {/* <div className="form-options">
               <label>
                 <input type="checkbox" /> Remember me
               </label>
               <button type="button" className="forgot-btn">
                 Forgot password?
               </button>
-            </div>
+            </div> */}
 
             {/* Submit Button */}
             <button type="submit" className="login-btn">Sign In</button>
