@@ -115,10 +115,53 @@ button {
   align-items: center;
   position: relative;
 }
+/* Reset */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Header */
+.header {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 10;
+}
 
+/* Logo */
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
 
+/* Desktop nav (horizontal) */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+}
 
+.nav-links a {
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: #0d58a7;
+}
+
+/* Hamburger (hidden on desktop) */
 .hamburger {
   display: none;
   font-size: 1.5rem;
@@ -138,7 +181,8 @@ button {
    MOBILE VIEW (Merged Your Sidebar CSS + Working Nav)
 --------------------------------------------------------- */
 @media (max-width: 768px) {
-    
+
+  /* Show hamburger */
   .hamburger {
     display: block;
   }
@@ -180,7 +224,7 @@ button {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
   }
 
   .menu li:hover {
@@ -188,3 +232,31 @@ button {
   }
 }
 
+/* Product grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.products-grid > div {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Inputs + Buttons */
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}

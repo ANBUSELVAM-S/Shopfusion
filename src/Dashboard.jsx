@@ -54,7 +54,7 @@ function App() {
       <header className="header" style={{ padding: "0.5rem 1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
         {/* Logo / Hamburger */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-          <GiHamburgerMenu size={24} className="hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ cursor: "pointer" }} />
+          <GiHamburgerMenu size={50} className="hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ cursor: "pointer" }} />
           <h2 style={{ margin: 0 }}>Shopfusion</h2>
         </div>
 
