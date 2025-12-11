@@ -43,7 +43,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false); // for hamburger toggle
 
   const handleLogout = () => {
-  window.location.href = "/Login";
+  window.location.href = "/login";
 };
 
 
