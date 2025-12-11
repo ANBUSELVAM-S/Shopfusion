@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Dashboard.css'
 import Favourites from "./Favourites";
+import { useNavigate } from 'react-router-dom';
 import Order from "./order";   
 import Cart from "./cart";    
 import { RiLogoutBoxRFill } from "react-icons/ri";
@@ -42,7 +43,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false); // for hamburger toggle
 
   const handleLogout = () => {
-  window.location.href = "/login";
+  window.location.href = "/Login";
 };
 
 
