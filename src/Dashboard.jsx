@@ -41,6 +41,11 @@ function App() {
   const [activePage, setActivePage] = useState("home");
   const [menuOpen, setMenuOpen] = useState(false); // for hamburger toggle
 
+  const handleLogout = () => {
+  window.location.href = "/login";
+};
+
+
   const addToCart = (product) => setCart([...cart, product]);
   const orderNow = (product) => { setOrders([...orders, product]); setActivePage("order"); }
   const toggleFavourite = (id) => {
@@ -72,7 +77,10 @@ function App() {
           <li onClick={() => { setActivePage("favourites"); setMenuOpen(false); }}>Favourite</li>
           <li onClick={() => { setActivePage("order"); setMenuOpen(false); }}>Order</li>
           <li onClick={() => { setActivePage("cart"); setMenuOpen(false); }}>Cart ({cart.length})</li>
-          <li>Logout <RiLogoutBoxRFill size={20} /></li>
+          <li onClick={handleLogout} style={{cursor: "pointer"}}>
+  Logout <RiLogoutBoxRFill size={20} />
+</li>
+
         </ul>
       </header>
 
