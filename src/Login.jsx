@@ -4,7 +4,7 @@ import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 import { GoogleOAuthProvider, GoogleLogin } from "@react-oauth/google";
 import './Login.css'; // your CSS file
 
-const CLIENT_ID = "1064111085911-odjgr0gfecta4rj1gum1bre1plnever8.apps.googleusercontent.com"; // replace with your own client ID
+const CLIENT_ID = "230881240421-fdtot6vd3crp572ruupgh2ok1f7p3kln.apps.googleusercontent.com"; // replace with your own client ID
 
 export default function Login({ onLogin }) {
   const [email, setEmail] = useState('');
