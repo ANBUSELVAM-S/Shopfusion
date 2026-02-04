@@ -80,14 +80,14 @@ button {
     flex-direction: column;
     background-color: #007bff;
     width: 200px;
-    padding: 1rem;
+    padding: rem;
     border-radius: 8px;
     display: none; /* hide menu by default */
   }
-
   /* Show menu when open */
   .header ul.open {
     display: flex;
+    
   }
 
   .header ul li {
@@ -101,6 +101,7 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   padding: 1rem;
+  margin-top:65px;
 }
 
 /* Product card */

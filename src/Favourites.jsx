@@ -6,7 +6,7 @@ function Favourites({ products, favourites, toggleFavourite, addToCart, orderNow
   const favItems = products.filter(p => favourites.includes(p.id));
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem",textAlign: "center",marginTop:"75px" }}>
       <h2>⭐ Favourite Items</h2>
       {favItems.length === 0 ? (
         <p>No favourite items yet.</p>

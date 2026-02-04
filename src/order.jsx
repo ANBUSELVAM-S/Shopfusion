@@ -9,7 +9,7 @@ function Order({ orders, addToCart, cancelOrder }) {
   };
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem",textAlign: "center",marginTop:"75px" }}>
       <h2>📦 Your Orders</h2>
       {orders.length === 0 ? (
         <p>No orders placed yet.</p>

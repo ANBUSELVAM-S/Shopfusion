@@ -2,7 +2,7 @@ import React from "react";
 
 function Cart({ cart, removeFromCart, orderNow }) {
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem",textAlign: "center",marginTop:"75px" }}>
       <h2>🛒 Your Cart</h2>
       {cart.length === 0 ? (
         <p>No items in cart.</p>

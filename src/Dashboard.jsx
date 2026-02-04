@@ -57,8 +57,22 @@ function App() {
   return (
     <>
       {/* Header */}
-      <header className="header" style={{ padding: "0.5rem 1rem", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        {/* Logo / Hamburger */}
+      <header
+  className="header"
+  style={{
+    padding: "0.5rem 1rem",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    position: "fixed",   // ✅ header stays on top while scrolling
+    top: "0",
+    left: "0",
+    width: "100%",       // ✅ full width
+    background: "blue", // ✅ visible background
+    zIndex: "1000"       // ✅ stays above content
+  }}
+>
+{/* Logo / Hamburger */}
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
           <GiHamburgerMenu size={50} className="hamburger" onClick={() => setMenuOpen(!menuOpen)} style={{ cursor: "pointer" }} />
           <h2 style={{ margin: 0 }}>Shopfusion</h2>
@@ -69,7 +83,7 @@ function App() {
           listStyle: "none",
           display: "flex",
           gap: "1rem",
-          margin: 0,
+          margin: "0",
           padding: 0,
           alignItems: "center",
           
